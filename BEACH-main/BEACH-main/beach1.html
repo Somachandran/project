@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Beach Directory</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://www.google.com/maps/search/beach+locations+in+india/@19.7978969,72.698779,6z?entry=ttu&g_ep=EgoyMDI0MDkwNC4wIKXMDSoASAFQAw%3D%3D"  target="_self"></script>
+</head>
+<body>
+    <video loop="loop" autoplay="autoplay" muted="muted">
+        <source src="https://cdn.pixabay.com/video/2023/04/11/158349-816637197_large.mp4">
+     </video>
+    <header>
+        <h1>Indian Beach Directory</h1>
+        <p class="tagline">Find your perfect beach getaway</p>
+        <nav>
+            <ul>
+                <li><a href="#directory">Beach Directory</a></li>
+                <li><a href="#activities">Recreational Suitability</a></li>
+                <li><a href="#weather">Weather & Sea Conditions</a></li>
+                <li><a href="#safety">Safety Index</a></li>
+                <li><a href="#restrooms">Restroom nearby</a></li>
+                <li><a href="#amenities">Amenities & Facilities</a></li>
+                <li><a href="#reviews">User Reviews</a></li>
+                <li><a href="./test.html"> Maps & Directions </a></li>
+                <li><a href="#events">Local Events</a></li>
+            </ul>
+        </nav>
+    </headec=r>
+    <!-- Using width property --> 
+
+<h1 style="font-size:10vw">Hello World</h1>
+   
+    <main>
+        <!-- Beach Directory Section -->
+        <section id="directory">
+            <h2>Beach Directory</h2>
+            <input type="text" id="search" placeholder="Search beaches...">
+            <div id="beach-list">
+                <!-- Beach images and details will be dynamically added here -->
+            </div>
+        </section>  
+
+
+        <h2>Maps and Directions</h2>
+<div id="map" style="height: 400px; width: 100%;"></div>
+
+<script>
+    function initMap() {
+        const goaBeach = { lat: 15.2993, lng: 74.1240 }; // Coordinates for Goa Beach
+        const map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 12,
+            center: goaBeach
+        });
+        new google.maps.Marker({
+            position: goaBeach,
+            map: map
+        });
+    }
+</script>
+<script async defer src="https://www.google.com/maps/search/beach+locations+in+india/@19.7978969,72.698779,6z?entry=ttu&g_ep=EgoyMDI0MDkwNC4wIKXMDSoASAFQAw%3D%3D"></script>
+
+
+
+
+
+        <!-- Recreational Suitability Section -->
+        <section id="activities">
+            <h2>Recreational Suitability</h2>
+            <p>Information about beach activities such as swimming, surfing, and fishing.</p>
+        </section>
+
+        <!-- Weather and Sea Conditions Section -->
+        <section id="weather">
+            <h2>Weather and Sea Conditions</h2>
+            <div id="weather-updates">
+                <!-- Weather updates will be dynamically added here -->
+            </div>
+        </section>
+
+        <!-- Safety Index Section -->
+        <section id="safety">
+            <h2>Safety Index</h2>
+            <div id="safety-ratings">
+                <!-- Safety ratings will be dynamically added here -->
+            </div>
+        </section>
+        
+        <!--restrooms nearby -->
+        <section id="Restroom">
+            <h2>restrooms nearby</h2>
+            <div id="restroom-info">
+                <!--restroom nearby the peoples will be added here-->
+            </div>
+        </section>
+        
+        <!-- Amenities and Facilities Section -->
+        <section id="amenities">
+            <h2>Amenities and Facilities</h2>
+            <div id="amenities-info">
+                <!-- Amenities and facilities info will be dynamically added here -->
+            </div>
+        </section>
+
+        <!-- User Reviews and Ratings Section -->
+        <section id="reviews">
+            <h2>User Reviews</h2>
+            <div id="user-reviews">
+                <!-- User reviews will be dynamically added here -->
+            </div>
+            <textarea id="comment-box" placeholder="Leave a comment"></textarea>
+            <button onclick="submitComment()">Submit</button>
+        </section>
+
+        <!-- Maps and Directions Section -->
+        <section id=1"map">
+            <h2>Maps and Directions</h2>
+            <div id="map-canvas"></div>
+        </section>
+
+        <!-- Local Events Calendar -->
+        <section id="events">
+            <h2>Local Events</h2>
+            <table id="events-table">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Event</th>
+                        <th>Location</th>
+                    </tr>
+                    <tr>
+                        <th> </th>
+                </thead>
+                <tbody>
+                    <!-- Event rows will be dynamically added here -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Indian Beach Directory. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+
